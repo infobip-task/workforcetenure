@@ -1,0 +1,2816 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook locale='en_US' original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AllowCalculationsForDensifiedMarks.true...AllowCalculationsForDensifiedMarks />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneFriendlyName />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='EmployeeMovement' inline='true' name='federated.1u8yj9d1t24r7c1azz7eh11247xx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='EmployeeMovement' name='excel-direct.01asj3m10za43219tkmea1sz070t'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/vonschultz666/Desktop/Task/Dataset/EmployeeMovement.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='string' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[EndOfContract]' />
+            <value name='[StartOfContract]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Sheet1].[EndOfContract]' />
+              <field name='[Sheet1].[StartOfContract]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.01asj3m10za43219tkmea1sz070t' name='Sheet1' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:C113:no:A1:C113:0' header='yes' outcome='6'>
+              <column datatype='string' name='EmployeeID' ordinal='0' />
+              <column datatype='date' date-parse-format='yyyy-MM-dd' name='StartOfContract' ordinal='1' />
+              <column datatype='string' name='EndOfContract' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='string' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[EndOfContract]' />
+            <value name='[StartOfContract]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Sheet1].[EndOfContract]' />
+              <field name='[Sheet1].[StartOfContract]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.01asj3m10za43219tkmea1sz070t' name='Sheet1' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:C113:no:A1:C113:0' header='yes' outcome='6'>
+              <column datatype='string' name='EmployeeID' ordinal='0' />
+              <column datatype='date' date-parse-format='yyyy-MM-dd' name='StartOfContract' ordinal='1' />
+              <column datatype='string' name='EndOfContract' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C113:no:A1:C113:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EmployeeID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>EmployeeID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_DF940FAB1DAA486689BBA67CFBF406DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_DF940FAB1DAA486689BBA67CFBF406DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_DF940FAB1DAA486689BBA67CFBF406DB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Date' datatype='date' name='[Calculation_2126543507444523008]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE(IF [Pivot Field Values]=&apos;X&apos;&#13;&#10;     THEN  TODAY()  &#13;&#10;     ELSE  DATEPARSE ( &quot;yyyy-MM-dd&quot;, [Pivot Field Values])&#13;&#10;     END)' />
+      </column>
+      <column caption='Absolute Turnover' datatype='integer' name='[Calculation_2126543507447881730]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Pivot Field Names] = &quot;StartOfContract&quot; THEN 1&#13;&#10;ELSE -1&#13;&#10;END' />
+      </column>
+      <column caption='Conditional Formatting' datatype='string' name='[Calculation_2126543507447951363]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF SUM([Calculation_2126543507447881730]) &gt;= 0 THEN &apos;OK&apos;&#13;&#10;ELSE &apos;BAD&apos;&#13;&#10;END' />
+      </column>
+      <column caption='Running Sum' datatype='integer' name='[Calculation_2126543507450597380]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF INDEX()&lt;WINDOW_MAX(INDEX()) THEN&#13;&#10;    RUNNING_SUM(SUM(IF [Pivot Field Names] = &quot;StartOfContract&quot; THEN 1&#13;&#10;    ELSE -1&#13;&#10;    END))&#13;&#10;END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Exclude Future Dates' datatype='boolean' name='[Calculation_2126543507450683397]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Calculation_2126543507444523008]&lt;TODAY()' />
+      </column>
+      <column caption='Employee ID' datatype='string' name='[EmployeeID]' role='dimension' type='nominal' />
+      <column caption='Event Type' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Date TEMP' datatype='string' hidden='true' name='[Pivot Field Values]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_DF940FAB1DAA486689BBA67CFBF406DB]' role='measure' type='quantitative' />
+      <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_2126543507447951363]' derivation='User' name='[usr:Calculation_2126543507447951363:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-hidden-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[usr:Calculation_2126543507447951363:nk]' type='palette'>
+            <map to='#373a3b'>
+              <bucket>&quot;BAD&quot;</bucket>
+            </map>
+            <map to='#ff5a00'>
+              <bucket>&quot;OK&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Pivot Field Names:nk]' type='palette'>
+            <map to='#373a3b'>
+              <bucket>&quot;EndOfContract&quot;</bucket>
+            </map>
+            <map to='#ff5a00'>
+              <bucket>&quot;StartOfContract&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Croatia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='EmployeeID' />
+        <field-sort-custom-order field='Pivot Field Names' />
+        <field-sort-custom-order field='Pivot Field Values' />
+        <field-sort-custom-order field='Calculation_2126543507444523008' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_DF940FAB1DAA486689BBA67CFBF406DB'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='string' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[EndOfContract]' />
+                  <value name='[StartOfContract]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[Sheet1].[EndOfContract]' />
+                    <field name='[Sheet1].[StartOfContract]' />
+                  </group>
+                </groups>
+                <relation connection='excel-direct.01asj3m10za43219tkmea1sz070t' name='Sheet1' table='[Sheet1$]' type='table'>
+                  <columns gridOrigin='A1:C113:no:A1:C113:0' header='yes' outcome='6'>
+                    <column datatype='string' name='EmployeeID' ordinal='0' />
+                    <column datatype='date' date-parse-format='yyyy-MM-dd' name='StartOfContract' ordinal='1' />
+                    <column datatype='string' name='EndOfContract' ordinal='2' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='EmployeeMetrics' inline='true' name='federated.0t20sl90kjn8wx1aux8wq1i2bbqd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='EmployeeMetrics' name='textscan.0cm2r0h1ueecpc1f8l5jz0jo9mmk'>
+            <connection class='textscan' directory='C:/Users/vonschultz666/Desktop/Task/Dataset' filename='EmployeeMetrics.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Betweenness_2008-31-12]' />
+            <value name='[Betweenness_2009-31-12]' />
+            <value name='[Betweenness_2010-31-12]' />
+            <value name='[Betweenness_2011-31-12]' />
+            <value name='[Betweenness_2012-31-12]' />
+            <value name='[Betweenness_2013-31-12]' />
+            <value name='[Betweenness_2014-31-12]' />
+            <value name='[Betweenness_2015-31-12]' />
+            <value name='[Betweenness_2016-31-12]' />
+            <value name='[Betweenness_2017-31-12]' />
+            <value name='[Betweenness_2018-31-12]' />
+            <value name='[Betweenness_2019-31-12]' />
+            <value name='[Betweenness_2020-31-12]' />
+            <value name='[Betweenness_2021-31-12]' />
+            <value name='[Betweenness_2022-31-12]' />
+            <value name='[Degree_2008-31-12]' />
+            <value name='[Degree_2009-31-12]' />
+            <value name='[Degree_2010-31-12]' />
+            <value name='[Degree_2011-31-12]' />
+            <value name='[Degree_2012-31-12]' />
+            <value name='[Degree_2013-31-12]' />
+            <value name='[Degree_2014-31-12]' />
+            <value name='[Degree_2015-31-12]' />
+            <value name='[Degree_2016-31-12]' />
+            <value name='[Degree_2017-31-12]' />
+            <value name='[Degree_2018-31-12]' />
+            <value name='[Degree_2019-31-12]' />
+            <value name='[Degree_2020-31-12]' />
+            <value name='[Degree_2021-31-12]' />
+            <value name='[Degree_2022-31-12]' />
+            <value name='[Eigenvector_2008-31-12]' />
+            <value name='[Eigenvector_2009-31-12]' />
+            <value name='[Eigenvector_2010-31-12]' />
+            <value name='[Eigenvector_2011-31-12]' />
+            <value name='[Eigenvector_2012-31-12]' />
+            <value name='[Eigenvector_2013-31-12]' />
+            <value name='[Eigenvector_2014-31-12]' />
+            <value name='[Eigenvector_2015-31-12]' />
+            <value name='[Eigenvector_2016-31-12]' />
+            <value name='[Eigenvector_2017-31-12]' />
+            <value name='[Eigenvector_2018-31-12]' />
+            <value name='[Eigenvector_2019-31-12]' />
+            <value name='[Eigenvector_2020-31-12]' />
+            <value name='[Eigenvector_2021-31-12]' />
+            <value name='[Eigenvector_2022-31-12]' />
+            <value name='[Louvain_2008-31-12]' />
+            <value name='[Louvain_2009-31-12]' />
+            <value name='[Louvain_2010-31-12]' />
+            <value name='[Louvain_2011-31-12]' />
+            <value name='[Louvain_2012-31-12]' />
+            <value name='[Louvain_2013-31-12]' />
+            <value name='[Louvain_2014-31-12]' />
+            <value name='[Louvain_2015-31-12]' />
+            <value name='[Louvain_2016-31-12]' />
+            <value name='[Louvain_2017-31-12]' />
+            <value name='[Louvain_2018-31-12]' />
+            <value name='[Louvain_2019-31-12]' />
+            <value name='[Louvain_2020-31-12]' />
+            <value name='[Louvain_2021-31-12]' />
+            <value name='[Louvain_2022-31-12]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[EmployeeMetrics.csv].[Betweenness_2008-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2009-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2010-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2011-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2012-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2013-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2014-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2015-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2016-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2017-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2018-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2019-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2020-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2021-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2022-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2008-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2009-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2010-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2011-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2012-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2013-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2014-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2015-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2016-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2017-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2018-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2019-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2020-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2021-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2022-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2008-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2009-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2010-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2011-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2012-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2013-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2014-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2015-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2016-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2017-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2018-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2019-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2020-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2021-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2022-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2008-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2009-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2010-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2011-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2012-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2013-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2014-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2015-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2016-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2017-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2018-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2019-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2020-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2021-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2022-31-12]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0cm2r0h1ueecpc1f8l5jz0jo9mmk' name='EmployeeMetrics.csv' table='[EmployeeMetrics#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='_id' ordinal='0' />
+              <column datatype='string' name='_labels' ordinal='1' />
+              <column datatype='real' name='Betweenness_2008-31-12' ordinal='2' />
+              <column datatype='real' name='Betweenness_2009-31-12' ordinal='3' />
+              <column datatype='real' name='Betweenness_2010-31-12' ordinal='4' />
+              <column datatype='real' name='Betweenness_2011-31-12' ordinal='5' />
+              <column datatype='real' name='Betweenness_2012-31-12' ordinal='6' />
+              <column datatype='real' name='Betweenness_2013-31-12' ordinal='7' />
+              <column datatype='real' name='Betweenness_2014-31-12' ordinal='8' />
+              <column datatype='real' name='Betweenness_2015-31-12' ordinal='9' />
+              <column datatype='real' name='Betweenness_2016-31-12' ordinal='10' />
+              <column datatype='real' name='Betweenness_2017-31-12' ordinal='11' />
+              <column datatype='real' name='Betweenness_2018-31-12' ordinal='12' />
+              <column datatype='real' name='Betweenness_2019-31-12' ordinal='13' />
+              <column datatype='real' name='Betweenness_2020-31-12' ordinal='14' />
+              <column datatype='real' name='Betweenness_2021-31-12' ordinal='15' />
+              <column datatype='real' name='Betweenness_2022-31-12' ordinal='16' />
+              <column datatype='real' name='Degree_2008-31-12' ordinal='17' />
+              <column datatype='real' name='Degree_2009-31-12' ordinal='18' />
+              <column datatype='real' name='Degree_2010-31-12' ordinal='19' />
+              <column datatype='real' name='Degree_2011-31-12' ordinal='20' />
+              <column datatype='real' name='Degree_2012-31-12' ordinal='21' />
+              <column datatype='real' name='Degree_2013-31-12' ordinal='22' />
+              <column datatype='real' name='Degree_2014-31-12' ordinal='23' />
+              <column datatype='real' name='Degree_2015-31-12' ordinal='24' />
+              <column datatype='real' name='Degree_2016-31-12' ordinal='25' />
+              <column datatype='real' name='Degree_2017-31-12' ordinal='26' />
+              <column datatype='real' name='Degree_2018-31-12' ordinal='27' />
+              <column datatype='real' name='Degree_2019-31-12' ordinal='28' />
+              <column datatype='real' name='Degree_2020-31-12' ordinal='29' />
+              <column datatype='real' name='Degree_2021-31-12' ordinal='30' />
+              <column datatype='real' name='Degree_2022-31-12' ordinal='31' />
+              <column datatype='real' name='Eigenvector_2008-31-12' ordinal='32' />
+              <column datatype='real' name='Eigenvector_2009-31-12' ordinal='33' />
+              <column datatype='real' name='Eigenvector_2010-31-12' ordinal='34' />
+              <column datatype='real' name='Eigenvector_2011-31-12' ordinal='35' />
+              <column datatype='real' name='Eigenvector_2012-31-12' ordinal='36' />
+              <column datatype='real' name='Eigenvector_2013-31-12' ordinal='37' />
+              <column datatype='real' name='Eigenvector_2014-31-12' ordinal='38' />
+              <column datatype='real' name='Eigenvector_2015-31-12' ordinal='39' />
+              <column datatype='real' name='Eigenvector_2016-31-12' ordinal='40' />
+              <column datatype='real' name='Eigenvector_2017-31-12' ordinal='41' />
+              <column datatype='real' name='Eigenvector_2018-31-12' ordinal='42' />
+              <column datatype='real' name='Eigenvector_2019-31-12' ordinal='43' />
+              <column datatype='real' name='Eigenvector_2020-31-12' ordinal='44' />
+              <column datatype='real' name='Eigenvector_2021-31-12' ordinal='45' />
+              <column datatype='real' name='Eigenvector_2022-31-12' ordinal='46' />
+              <column datatype='string' name='EmployeeID' ordinal='47' />
+              <column datatype='date' name='EndOfContract' ordinal='48' />
+              <column datatype='integer' name='Louvain_2008-31-12' ordinal='49' />
+              <column datatype='integer' name='Louvain_2009-31-12' ordinal='50' />
+              <column datatype='integer' name='Louvain_2010-31-12' ordinal='51' />
+              <column datatype='integer' name='Louvain_2011-31-12' ordinal='52' />
+              <column datatype='integer' name='Louvain_2012-31-12' ordinal='53' />
+              <column datatype='integer' name='Louvain_2013-31-12' ordinal='54' />
+              <column datatype='integer' name='Louvain_2014-31-12' ordinal='55' />
+              <column datatype='integer' name='Louvain_2015-31-12' ordinal='56' />
+              <column datatype='integer' name='Louvain_2016-31-12' ordinal='57' />
+              <column datatype='integer' name='Louvain_2017-31-12' ordinal='58' />
+              <column datatype='integer' name='Louvain_2018-31-12' ordinal='59' />
+              <column datatype='integer' name='Louvain_2019-31-12' ordinal='60' />
+              <column datatype='integer' name='Louvain_2020-31-12' ordinal='61' />
+              <column datatype='integer' name='Louvain_2021-31-12' ordinal='62' />
+              <column datatype='integer' name='Louvain_2022-31-12' ordinal='63' />
+              <column datatype='date' name='StartOfContract' ordinal='64' />
+              <column datatype='string' name='_start' ordinal='65' />
+              <column datatype='string' name='_end' ordinal='66' />
+              <column datatype='string' name='_type' ordinal='67' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Betweenness_2008-31-12]' />
+            <value name='[Betweenness_2009-31-12]' />
+            <value name='[Betweenness_2010-31-12]' />
+            <value name='[Betweenness_2011-31-12]' />
+            <value name='[Betweenness_2012-31-12]' />
+            <value name='[Betweenness_2013-31-12]' />
+            <value name='[Betweenness_2014-31-12]' />
+            <value name='[Betweenness_2015-31-12]' />
+            <value name='[Betweenness_2016-31-12]' />
+            <value name='[Betweenness_2017-31-12]' />
+            <value name='[Betweenness_2018-31-12]' />
+            <value name='[Betweenness_2019-31-12]' />
+            <value name='[Betweenness_2020-31-12]' />
+            <value name='[Betweenness_2021-31-12]' />
+            <value name='[Betweenness_2022-31-12]' />
+            <value name='[Degree_2008-31-12]' />
+            <value name='[Degree_2009-31-12]' />
+            <value name='[Degree_2010-31-12]' />
+            <value name='[Degree_2011-31-12]' />
+            <value name='[Degree_2012-31-12]' />
+            <value name='[Degree_2013-31-12]' />
+            <value name='[Degree_2014-31-12]' />
+            <value name='[Degree_2015-31-12]' />
+            <value name='[Degree_2016-31-12]' />
+            <value name='[Degree_2017-31-12]' />
+            <value name='[Degree_2018-31-12]' />
+            <value name='[Degree_2019-31-12]' />
+            <value name='[Degree_2020-31-12]' />
+            <value name='[Degree_2021-31-12]' />
+            <value name='[Degree_2022-31-12]' />
+            <value name='[Eigenvector_2008-31-12]' />
+            <value name='[Eigenvector_2009-31-12]' />
+            <value name='[Eigenvector_2010-31-12]' />
+            <value name='[Eigenvector_2011-31-12]' />
+            <value name='[Eigenvector_2012-31-12]' />
+            <value name='[Eigenvector_2013-31-12]' />
+            <value name='[Eigenvector_2014-31-12]' />
+            <value name='[Eigenvector_2015-31-12]' />
+            <value name='[Eigenvector_2016-31-12]' />
+            <value name='[Eigenvector_2017-31-12]' />
+            <value name='[Eigenvector_2018-31-12]' />
+            <value name='[Eigenvector_2019-31-12]' />
+            <value name='[Eigenvector_2020-31-12]' />
+            <value name='[Eigenvector_2021-31-12]' />
+            <value name='[Eigenvector_2022-31-12]' />
+            <value name='[Louvain_2008-31-12]' />
+            <value name='[Louvain_2009-31-12]' />
+            <value name='[Louvain_2010-31-12]' />
+            <value name='[Louvain_2011-31-12]' />
+            <value name='[Louvain_2012-31-12]' />
+            <value name='[Louvain_2013-31-12]' />
+            <value name='[Louvain_2014-31-12]' />
+            <value name='[Louvain_2015-31-12]' />
+            <value name='[Louvain_2016-31-12]' />
+            <value name='[Louvain_2017-31-12]' />
+            <value name='[Louvain_2018-31-12]' />
+            <value name='[Louvain_2019-31-12]' />
+            <value name='[Louvain_2020-31-12]' />
+            <value name='[Louvain_2021-31-12]' />
+            <value name='[Louvain_2022-31-12]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[EmployeeMetrics.csv].[Betweenness_2008-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2009-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2010-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2011-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2012-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2013-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2014-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2015-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2016-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2017-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2018-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2019-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2020-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2021-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Betweenness_2022-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2008-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2009-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2010-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2011-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2012-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2013-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2014-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2015-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2016-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2017-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2018-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2019-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2020-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2021-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Degree_2022-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2008-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2009-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2010-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2011-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2012-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2013-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2014-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2015-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2016-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2017-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2018-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2019-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2020-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2021-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Eigenvector_2022-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2008-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2009-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2010-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2011-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2012-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2013-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2014-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2015-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2016-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2017-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2018-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2019-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2020-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2021-31-12]' />
+              <field name='[EmployeeMetrics.csv].[Louvain_2022-31-12]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0cm2r0h1ueecpc1f8l5jz0jo9mmk' name='EmployeeMetrics.csv' table='[EmployeeMetrics#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='_id' ordinal='0' />
+              <column datatype='string' name='_labels' ordinal='1' />
+              <column datatype='real' name='Betweenness_2008-31-12' ordinal='2' />
+              <column datatype='real' name='Betweenness_2009-31-12' ordinal='3' />
+              <column datatype='real' name='Betweenness_2010-31-12' ordinal='4' />
+              <column datatype='real' name='Betweenness_2011-31-12' ordinal='5' />
+              <column datatype='real' name='Betweenness_2012-31-12' ordinal='6' />
+              <column datatype='real' name='Betweenness_2013-31-12' ordinal='7' />
+              <column datatype='real' name='Betweenness_2014-31-12' ordinal='8' />
+              <column datatype='real' name='Betweenness_2015-31-12' ordinal='9' />
+              <column datatype='real' name='Betweenness_2016-31-12' ordinal='10' />
+              <column datatype='real' name='Betweenness_2017-31-12' ordinal='11' />
+              <column datatype='real' name='Betweenness_2018-31-12' ordinal='12' />
+              <column datatype='real' name='Betweenness_2019-31-12' ordinal='13' />
+              <column datatype='real' name='Betweenness_2020-31-12' ordinal='14' />
+              <column datatype='real' name='Betweenness_2021-31-12' ordinal='15' />
+              <column datatype='real' name='Betweenness_2022-31-12' ordinal='16' />
+              <column datatype='real' name='Degree_2008-31-12' ordinal='17' />
+              <column datatype='real' name='Degree_2009-31-12' ordinal='18' />
+              <column datatype='real' name='Degree_2010-31-12' ordinal='19' />
+              <column datatype='real' name='Degree_2011-31-12' ordinal='20' />
+              <column datatype='real' name='Degree_2012-31-12' ordinal='21' />
+              <column datatype='real' name='Degree_2013-31-12' ordinal='22' />
+              <column datatype='real' name='Degree_2014-31-12' ordinal='23' />
+              <column datatype='real' name='Degree_2015-31-12' ordinal='24' />
+              <column datatype='real' name='Degree_2016-31-12' ordinal='25' />
+              <column datatype='real' name='Degree_2017-31-12' ordinal='26' />
+              <column datatype='real' name='Degree_2018-31-12' ordinal='27' />
+              <column datatype='real' name='Degree_2019-31-12' ordinal='28' />
+              <column datatype='real' name='Degree_2020-31-12' ordinal='29' />
+              <column datatype='real' name='Degree_2021-31-12' ordinal='30' />
+              <column datatype='real' name='Degree_2022-31-12' ordinal='31' />
+              <column datatype='real' name='Eigenvector_2008-31-12' ordinal='32' />
+              <column datatype='real' name='Eigenvector_2009-31-12' ordinal='33' />
+              <column datatype='real' name='Eigenvector_2010-31-12' ordinal='34' />
+              <column datatype='real' name='Eigenvector_2011-31-12' ordinal='35' />
+              <column datatype='real' name='Eigenvector_2012-31-12' ordinal='36' />
+              <column datatype='real' name='Eigenvector_2013-31-12' ordinal='37' />
+              <column datatype='real' name='Eigenvector_2014-31-12' ordinal='38' />
+              <column datatype='real' name='Eigenvector_2015-31-12' ordinal='39' />
+              <column datatype='real' name='Eigenvector_2016-31-12' ordinal='40' />
+              <column datatype='real' name='Eigenvector_2017-31-12' ordinal='41' />
+              <column datatype='real' name='Eigenvector_2018-31-12' ordinal='42' />
+              <column datatype='real' name='Eigenvector_2019-31-12' ordinal='43' />
+              <column datatype='real' name='Eigenvector_2020-31-12' ordinal='44' />
+              <column datatype='real' name='Eigenvector_2021-31-12' ordinal='45' />
+              <column datatype='real' name='Eigenvector_2022-31-12' ordinal='46' />
+              <column datatype='string' name='EmployeeID' ordinal='47' />
+              <column datatype='date' name='EndOfContract' ordinal='48' />
+              <column datatype='integer' name='Louvain_2008-31-12' ordinal='49' />
+              <column datatype='integer' name='Louvain_2009-31-12' ordinal='50' />
+              <column datatype='integer' name='Louvain_2010-31-12' ordinal='51' />
+              <column datatype='integer' name='Louvain_2011-31-12' ordinal='52' />
+              <column datatype='integer' name='Louvain_2012-31-12' ordinal='53' />
+              <column datatype='integer' name='Louvain_2013-31-12' ordinal='54' />
+              <column datatype='integer' name='Louvain_2014-31-12' ordinal='55' />
+              <column datatype='integer' name='Louvain_2015-31-12' ordinal='56' />
+              <column datatype='integer' name='Louvain_2016-31-12' ordinal='57' />
+              <column datatype='integer' name='Louvain_2017-31-12' ordinal='58' />
+              <column datatype='integer' name='Louvain_2018-31-12' ordinal='59' />
+              <column datatype='integer' name='Louvain_2019-31-12' ordinal='60' />
+              <column datatype='integer' name='Louvain_2020-31-12' ordinal='61' />
+              <column datatype='integer' name='Louvain_2021-31-12' ordinal='62' />
+              <column datatype='integer' name='Louvain_2022-31-12' ordinal='63' />
+              <column datatype='date' name='StartOfContract' ordinal='64' />
+              <column datatype='string' name='_start' ordinal='65' />
+              <column datatype='string' name='_end' ordinal='66' />
+              <column datatype='string' name='_type' ordinal='67' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[EmployeeMetrics.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[_id]</local-name>
+            <parent-name>[EmployeeMetrics.csv]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EmployeeMetrics.csv_1CB6365101F04AEE8294C96FF0723AB3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_labels</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_labels]</local-name>
+            <parent-name>[EmployeeMetrics.csv]</parent-name>
+            <remote-alias>_labels</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EmployeeMetrics.csv_1CB6365101F04AEE8294C96FF0723AB3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EmployeeID]</local-name>
+            <parent-name>[EmployeeMetrics.csv]</parent-name>
+            <remote-alias>EmployeeID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EmployeeMetrics.csv_1CB6365101F04AEE8294C96FF0723AB3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EndOfContract</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[EndOfContract]</local-name>
+            <parent-name>[EmployeeMetrics.csv]</parent-name>
+            <remote-alias>EndOfContract</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EmployeeMetrics.csv_1CB6365101F04AEE8294C96FF0723AB3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StartOfContract</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[StartOfContract]</local-name>
+            <parent-name>[EmployeeMetrics.csv]</parent-name>
+            <remote-alias>StartOfContract</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EmployeeMetrics.csv_1CB6365101F04AEE8294C96FF0723AB3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_start</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_start]</local-name>
+            <parent-name>[EmployeeMetrics.csv]</parent-name>
+            <remote-alias>_start</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EmployeeMetrics.csv_1CB6365101F04AEE8294C96FF0723AB3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_end</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_end]</local-name>
+            <parent-name>[EmployeeMetrics.csv]</parent-name>
+            <remote-alias>_end</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EmployeeMetrics.csv_1CB6365101F04AEE8294C96FF0723AB3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_type]</local-name>
+            <parent-name>[EmployeeMetrics.csv]</parent-name>
+            <remote-alias>_type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EmployeeMetrics.csv_1CB6365101F04AEE8294C96FF0723AB3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EmployeeMetrics.csv_1CB6365101F04AEE8294C96FF0723AB3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EmployeeMetrics.csv_1CB6365101F04AEE8294C96FF0723AB3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Community ID' datatype='string' name='[Calculation_2507942100907069440]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Pivot Field Names - Split 1]=&quot;Louvain&quot; THEN&#13;&#10;STR([Pivot Field Values])&#13;&#10;END' />
+      </column>
+      <column caption='COUNTD([Employee ID])=1' datatype='boolean' name='[Calculation_2507942100907462657]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF COUNTD([EmployeeID])=1 THEN TRUE&#13;&#10;ELSE FALSE&#13;&#10;END' />
+      </column>
+      <column caption='Metric Value - Eigenvector' datatype='real' name='[Calculation_2652620238985048064]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Pivot Field Names - Split 1]=&apos;Eigenvector&apos; AND (YEAR([Pivot Field Names - Split 2])=2009 OR YEAR([Pivot Field Names - Split 2])=2008)&#13;&#10;THEN 0&#13;&#10;ELSE [Pivot Field Values]&#13;&#10;END' />
+      </column>
+      <column caption='Employee ID' datatype='string' name='[EmployeeID]' role='dimension' type='nominal' />
+      <column caption='Metric Type' datatype='string' name='[Pivot Field Names - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[Pivot Field Names]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Pivot Field Names], &quot;_&quot;, 1 ) )' />
+      </column>
+      <column caption='Metric Date' datatype='date' datatype-customized='true' name='[Pivot Field Names - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[Pivot Field Names]'>
+        <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy-dd-MM&quot;, TRIM( SPLIT( [Pivot Field Names], &quot;_&quot;, 2 ) ) ))' />
+      </column>
+      <column datatype='string' hidden='true' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Metric Value' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='EmployeeMetrics.csv' datatype='table' name='[__tableau_internal_object_id__].[EmployeeMetrics.csv_1CB6365101F04AEE8294C96FF0723AB3]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[_end]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[_id]' role='dimension' type='ordinal' />
+      <column datatype='string' hidden='true' name='[_labels]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[_start]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[_type]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_2507942100907069440]' derivation='None' name='[none:Calculation_2507942100907069440:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Pivot Field Names - Split 2]' derivation='Year' name='[yr:Pivot Field Names - Split 2:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_2507942100907069440:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;4&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[yr:Pivot Field Names - Split 2:ok]' type='palette'>
+            <map to='#093c84'>
+              <bucket>2021</bucket>
+            </map>
+            <map to='#148997'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#26cad3'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#26d68f'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#2ec900'>
+              <bucket>2013</bucket>
+            </map>
+            <map to='#373a3b'>
+              <bucket>2010</bucket>
+            </map>
+            <map to='#460a8c'>
+              <bucket>2012</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>2008</bucket>
+            </map>
+            <map to='#713de8'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#8ca2b7'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2009</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2011</bucket>
+            </map>
+            <map to='#f7b334'>
+              <bucket>2015</bucket>
+            </map>
+            <map to='#ff0000'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#ff5a00'>
+              <bucket>2022</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Croatia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='EmployeeMetrics.csv' id='EmployeeMetrics.csv_1CB6365101F04AEE8294C96FF0723AB3'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='real' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Betweenness_2008-31-12]' />
+                  <value name='[Betweenness_2009-31-12]' />
+                  <value name='[Betweenness_2010-31-12]' />
+                  <value name='[Betweenness_2011-31-12]' />
+                  <value name='[Betweenness_2012-31-12]' />
+                  <value name='[Betweenness_2013-31-12]' />
+                  <value name='[Betweenness_2014-31-12]' />
+                  <value name='[Betweenness_2015-31-12]' />
+                  <value name='[Betweenness_2016-31-12]' />
+                  <value name='[Betweenness_2017-31-12]' />
+                  <value name='[Betweenness_2018-31-12]' />
+                  <value name='[Betweenness_2019-31-12]' />
+                  <value name='[Betweenness_2020-31-12]' />
+                  <value name='[Betweenness_2021-31-12]' />
+                  <value name='[Betweenness_2022-31-12]' />
+                  <value name='[Degree_2008-31-12]' />
+                  <value name='[Degree_2009-31-12]' />
+                  <value name='[Degree_2010-31-12]' />
+                  <value name='[Degree_2011-31-12]' />
+                  <value name='[Degree_2012-31-12]' />
+                  <value name='[Degree_2013-31-12]' />
+                  <value name='[Degree_2014-31-12]' />
+                  <value name='[Degree_2015-31-12]' />
+                  <value name='[Degree_2016-31-12]' />
+                  <value name='[Degree_2017-31-12]' />
+                  <value name='[Degree_2018-31-12]' />
+                  <value name='[Degree_2019-31-12]' />
+                  <value name='[Degree_2020-31-12]' />
+                  <value name='[Degree_2021-31-12]' />
+                  <value name='[Degree_2022-31-12]' />
+                  <value name='[Eigenvector_2008-31-12]' />
+                  <value name='[Eigenvector_2009-31-12]' />
+                  <value name='[Eigenvector_2010-31-12]' />
+                  <value name='[Eigenvector_2011-31-12]' />
+                  <value name='[Eigenvector_2012-31-12]' />
+                  <value name='[Eigenvector_2013-31-12]' />
+                  <value name='[Eigenvector_2014-31-12]' />
+                  <value name='[Eigenvector_2015-31-12]' />
+                  <value name='[Eigenvector_2016-31-12]' />
+                  <value name='[Eigenvector_2017-31-12]' />
+                  <value name='[Eigenvector_2018-31-12]' />
+                  <value name='[Eigenvector_2019-31-12]' />
+                  <value name='[Eigenvector_2020-31-12]' />
+                  <value name='[Eigenvector_2021-31-12]' />
+                  <value name='[Eigenvector_2022-31-12]' />
+                  <value name='[Louvain_2008-31-12]' />
+                  <value name='[Louvain_2009-31-12]' />
+                  <value name='[Louvain_2010-31-12]' />
+                  <value name='[Louvain_2011-31-12]' />
+                  <value name='[Louvain_2012-31-12]' />
+                  <value name='[Louvain_2013-31-12]' />
+                  <value name='[Louvain_2014-31-12]' />
+                  <value name='[Louvain_2015-31-12]' />
+                  <value name='[Louvain_2016-31-12]' />
+                  <value name='[Louvain_2017-31-12]' />
+                  <value name='[Louvain_2018-31-12]' />
+                  <value name='[Louvain_2019-31-12]' />
+                  <value name='[Louvain_2020-31-12]' />
+                  <value name='[Louvain_2021-31-12]' />
+                  <value name='[Louvain_2022-31-12]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2008-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2009-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2010-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2011-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2012-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2013-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2014-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2015-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2016-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2017-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2018-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2019-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2020-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2021-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Betweenness_2022-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2008-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2009-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2010-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2011-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2012-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2013-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2014-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2015-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2016-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2017-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2018-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2019-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2020-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2021-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Degree_2022-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2008-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2009-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2010-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2011-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2012-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2013-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2014-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2015-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2016-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2017-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2018-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2019-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2020-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2021-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Eigenvector_2022-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2008-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2009-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2010-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2011-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2012-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2013-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2014-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2015-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2016-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2017-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2018-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2019-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2020-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2021-31-12]' />
+                    <field name='[EmployeeMetrics.csv].[Louvain_2022-31-12]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.0cm2r0h1ueecpc1f8l5jz0jo9mmk' name='EmployeeMetrics.csv' table='[EmployeeMetrics#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='_id' ordinal='0' />
+                    <column datatype='string' name='_labels' ordinal='1' />
+                    <column datatype='real' name='Betweenness_2008-31-12' ordinal='2' />
+                    <column datatype='real' name='Betweenness_2009-31-12' ordinal='3' />
+                    <column datatype='real' name='Betweenness_2010-31-12' ordinal='4' />
+                    <column datatype='real' name='Betweenness_2011-31-12' ordinal='5' />
+                    <column datatype='real' name='Betweenness_2012-31-12' ordinal='6' />
+                    <column datatype='real' name='Betweenness_2013-31-12' ordinal='7' />
+                    <column datatype='real' name='Betweenness_2014-31-12' ordinal='8' />
+                    <column datatype='real' name='Betweenness_2015-31-12' ordinal='9' />
+                    <column datatype='real' name='Betweenness_2016-31-12' ordinal='10' />
+                    <column datatype='real' name='Betweenness_2017-31-12' ordinal='11' />
+                    <column datatype='real' name='Betweenness_2018-31-12' ordinal='12' />
+                    <column datatype='real' name='Betweenness_2019-31-12' ordinal='13' />
+                    <column datatype='real' name='Betweenness_2020-31-12' ordinal='14' />
+                    <column datatype='real' name='Betweenness_2021-31-12' ordinal='15' />
+                    <column datatype='real' name='Betweenness_2022-31-12' ordinal='16' />
+                    <column datatype='real' name='Degree_2008-31-12' ordinal='17' />
+                    <column datatype='real' name='Degree_2009-31-12' ordinal='18' />
+                    <column datatype='real' name='Degree_2010-31-12' ordinal='19' />
+                    <column datatype='real' name='Degree_2011-31-12' ordinal='20' />
+                    <column datatype='real' name='Degree_2012-31-12' ordinal='21' />
+                    <column datatype='real' name='Degree_2013-31-12' ordinal='22' />
+                    <column datatype='real' name='Degree_2014-31-12' ordinal='23' />
+                    <column datatype='real' name='Degree_2015-31-12' ordinal='24' />
+                    <column datatype='real' name='Degree_2016-31-12' ordinal='25' />
+                    <column datatype='real' name='Degree_2017-31-12' ordinal='26' />
+                    <column datatype='real' name='Degree_2018-31-12' ordinal='27' />
+                    <column datatype='real' name='Degree_2019-31-12' ordinal='28' />
+                    <column datatype='real' name='Degree_2020-31-12' ordinal='29' />
+                    <column datatype='real' name='Degree_2021-31-12' ordinal='30' />
+                    <column datatype='real' name='Degree_2022-31-12' ordinal='31' />
+                    <column datatype='real' name='Eigenvector_2008-31-12' ordinal='32' />
+                    <column datatype='real' name='Eigenvector_2009-31-12' ordinal='33' />
+                    <column datatype='real' name='Eigenvector_2010-31-12' ordinal='34' />
+                    <column datatype='real' name='Eigenvector_2011-31-12' ordinal='35' />
+                    <column datatype='real' name='Eigenvector_2012-31-12' ordinal='36' />
+                    <column datatype='real' name='Eigenvector_2013-31-12' ordinal='37' />
+                    <column datatype='real' name='Eigenvector_2014-31-12' ordinal='38' />
+                    <column datatype='real' name='Eigenvector_2015-31-12' ordinal='39' />
+                    <column datatype='real' name='Eigenvector_2016-31-12' ordinal='40' />
+                    <column datatype='real' name='Eigenvector_2017-31-12' ordinal='41' />
+                    <column datatype='real' name='Eigenvector_2018-31-12' ordinal='42' />
+                    <column datatype='real' name='Eigenvector_2019-31-12' ordinal='43' />
+                    <column datatype='real' name='Eigenvector_2020-31-12' ordinal='44' />
+                    <column datatype='real' name='Eigenvector_2021-31-12' ordinal='45' />
+                    <column datatype='real' name='Eigenvector_2022-31-12' ordinal='46' />
+                    <column datatype='string' name='EmployeeID' ordinal='47' />
+                    <column datatype='date' name='EndOfContract' ordinal='48' />
+                    <column datatype='integer' name='Louvain_2008-31-12' ordinal='49' />
+                    <column datatype='integer' name='Louvain_2009-31-12' ordinal='50' />
+                    <column datatype='integer' name='Louvain_2010-31-12' ordinal='51' />
+                    <column datatype='integer' name='Louvain_2011-31-12' ordinal='52' />
+                    <column datatype='integer' name='Louvain_2012-31-12' ordinal='53' />
+                    <column datatype='integer' name='Louvain_2013-31-12' ordinal='54' />
+                    <column datatype='integer' name='Louvain_2014-31-12' ordinal='55' />
+                    <column datatype='integer' name='Louvain_2015-31-12' ordinal='56' />
+                    <column datatype='integer' name='Louvain_2016-31-12' ordinal='57' />
+                    <column datatype='integer' name='Louvain_2017-31-12' ordinal='58' />
+                    <column datatype='integer' name='Louvain_2018-31-12' ordinal='59' />
+                    <column datatype='integer' name='Louvain_2019-31-12' ordinal='60' />
+                    <column datatype='integer' name='Louvain_2020-31-12' ordinal='61' />
+                    <column datatype='integer' name='Louvain_2021-31-12' ordinal='62' />
+                    <column datatype='integer' name='Louvain_2022-31-12' ordinal='63' />
+                    <column datatype='date' name='StartOfContract' ordinal='64' />
+                    <column datatype='string' name='_start' ordinal='65' />
+                    <column datatype='string' name='_end' ordinal='66' />
+                    <column datatype='string' name='_type' ordinal='67' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Absolute Turnover By Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EmployeeMovement' name='federated.1u8yj9d1t24r7c1azz7eh11247xx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u8yj9d1t24r7c1azz7eh11247xx'>
+            <column caption='Date' datatype='date' name='[Calculation_2126543507444523008]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(IF [Pivot Field Values]=&apos;X&apos;&#13;&#10;     THEN  TODAY()  &#13;&#10;     ELSE  DATEPARSE ( &quot;yyyy-MM-dd&quot;, [Pivot Field Values])&#13;&#10;     END)' />
+            </column>
+            <column caption='Absolute Turnover' datatype='integer' name='[Calculation_2126543507447881730]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names] = &quot;StartOfContract&quot; THEN 1&#13;&#10;ELSE -1&#13;&#10;END' />
+            </column>
+            <column caption='Conditional Formatting' datatype='string' name='[Calculation_2126543507447951363]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF SUM([Calculation_2126543507447881730]) &gt;= 0 THEN &apos;OK&apos;&#13;&#10;ELSE &apos;BAD&apos;&#13;&#10;END' />
+            </column>
+            <column caption='Exclude Future Dates' datatype='boolean' name='[Calculation_2126543507450683397]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Calculation_2126543507444523008]&lt;TODAY()' />
+            </column>
+            <column caption='Event Type' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Date TEMP' datatype='string' hidden='true' name='[Pivot Field Values]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2126543507450683397]' derivation='None' name='[none:Calculation_2126543507450683397:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2126543507447881730]' derivation='Sum' name='[sum:Calculation_2126543507447881730:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2126543507447951363]' derivation='User' name='[usr:Calculation_2126543507447951363:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2126543507444523008]' derivation='Year' name='[yr:Calculation_2126543507444523008:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[none:Calculation_2126543507450683397:nk]'>
+            <groupfilter function='member' level='[none:Calculation_2126543507450683397:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[none:Calculation_2126543507450683397:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[sum:Calculation_2126543507447881730:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='vertical-align' field='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]' value='auto' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]' value='' />
+            <format attr='font-family' field='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]' value='Tableau Bold' />
+            <format attr='font-size' field='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]' value='7' />
+            <format attr='text-orientation' field='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[usr:Calculation_2126543507447951363:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Count Of Employees:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1u8yj9d1t24r7c1azz7eh11247xx].[sum:Calculation_2126543507447881730:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[sum:Calculation_2126543507447881730:qk]</rows>
+        <cols>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[sum:Calculation_2126543507447881730:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[sum:Calculation_2126543507447881730:qk]</field>
+                  <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]</field>
+                  <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[usr:Calculation_2126543507447951363:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>13</value>
+                <value>2015</value>
+                <value>&quot;OK&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[sum:Calculation_2126543507447881730:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[sum:Calculation_2126543507447881730:qk]</field>
+                  <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]</field>
+                  <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[usr:Calculation_2126543507447951363:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>-2</value>
+                <value>2014</value>
+                <value>&quot;BAD&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{C3AEEC8B-40FF-4D8C-AA12-BB656D5D0637}' />
+    </worksheet>
+    <worksheet name='Community Size By Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EmployeeMetrics' name='federated.0t20sl90kjn8wx1aux8wq1i2bbqd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0t20sl90kjn8wx1aux8wq1i2bbqd'>
+            <column caption='Community ID' datatype='string' name='[Calculation_2507942100907069440]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Pivot Field Names - Split 1]=&quot;Louvain&quot; THEN&#13;&#10;STR([Pivot Field Values])&#13;&#10;END' />
+            </column>
+            <column caption='COUNTD([Employee ID])=1' datatype='boolean' name='[Calculation_2507942100907462657]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF COUNTD([EmployeeID])=1 THEN TRUE&#13;&#10;ELSE FALSE&#13;&#10;END' />
+            </column>
+            <column caption='Employee ID' datatype='string' name='[EmployeeID]' role='dimension' type='nominal' />
+            <column caption='Metric Type' datatype='string' name='[Pivot Field Names - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[Pivot Field Names]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Pivot Field Names], &quot;_&quot;, 1 ) )' />
+            </column>
+            <column caption='Metric Date' datatype='date' datatype-customized='true' name='[Pivot Field Names - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[Pivot Field Names]'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy-dd-MM&quot;, TRIM( SPLIT( [Pivot Field Names], &quot;_&quot;, 2 ) ) ))' />
+            </column>
+            <column datatype='string' hidden='true' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Metric Value' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[EmployeeID]' derivation='CountD' name='[ctd:EmployeeID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2507942100907069440]' derivation='None' name='[none:Calculation_2507942100907069440:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2507942100907462657]' derivation='User' name='[usr:Calculation_2507942100907462657:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names - Split 2]' derivation='Year' name='[yr:Pivot Field Names - Split 2:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_2507942100907069440:nk]' />
+              <groupfilter function='member' level='[none:Calculation_2507942100907069440:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[usr:Calculation_2507942100907462657:nk]'>
+            <groupfilter function='member' level='[usr:Calculation_2507942100907462657:nk]' member='false' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]'>
+            <groupfilter function='level-members' level='[yr:Pivot Field Names - Split 2:ok]' />
+          </filter>
+          <slices>
+            <column>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]</column>
+            <column>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[usr:Calculation_2507942100907462657:nk]</column>
+            <column>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]' />
+              <size column='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[ctd:EmployeeID:qk]' />
+              <text column='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]' />
+              <lod column='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Tableau Bold' />
+                <format attr='font-size' value='7' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[ctd:EmployeeID:qk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6</value>
+                <value>&quot;1&quot;</value>
+                <value>2010</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[ctd:EmployeeID:qk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>50</value>
+                <value>&quot;4&quot;</value>
+                <value>2021</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[ctd:EmployeeID:qk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>50</value>
+                <value>&quot;4&quot;</value>
+                <value>2020</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[ctd:EmployeeID:qk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>53</value>
+                <value>&quot;4&quot;</value>
+                <value>2019</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[ctd:EmployeeID:qk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>59</value>
+                <value>&quot;4&quot;</value>
+                <value>2018</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[ctd:EmployeeID:qk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>57</value>
+                <value>&quot;4&quot;</value>
+                <value>2017</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[ctd:EmployeeID:qk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>54</value>
+                <value>&quot;4&quot;</value>
+                <value>2016</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[ctd:EmployeeID:qk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>48</value>
+                <value>&quot;4&quot;</value>
+                <value>2015</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[ctd:EmployeeID:qk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>44</value>
+                <value>&quot;1&quot;</value>
+                <value>2014</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[ctd:EmployeeID:qk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>34</value>
+                <value>&quot;1&quot;</value>
+                <value>2013</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[ctd:EmployeeID:qk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>23</value>
+                <value>&quot;1&quot;</value>
+                <value>2012</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[ctd:EmployeeID:qk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>14</value>
+                <value>&quot;1&quot;</value>
+                <value>2011</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{6941F47F-24CE-48A7-8D64-31B3D36EADF3}' />
+    </worksheet>
+    <worksheet name='Degree (Summary)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EmployeeMetrics' name='federated.0t20sl90kjn8wx1aux8wq1i2bbqd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0t20sl90kjn8wx1aux8wq1i2bbqd'>
+            <column caption='Employee ID' datatype='string' name='[EmployeeID]' role='dimension' type='nominal' />
+            <column caption='Metric Type' datatype='string' name='[Pivot Field Names - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[Pivot Field Names]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Pivot Field Names], &quot;_&quot;, 1 ) )' />
+            </column>
+            <column caption='Metric Date' datatype='date' datatype-customized='true' name='[Pivot Field Names - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[Pivot Field Names]'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy-dd-MM&quot;, TRIM( SPLIT( [Pivot Field Names], &quot;_&quot;, 2 ) ) ))' />
+            </column>
+            <column datatype='string' hidden='true' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Metric Value' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[EmployeeID]' derivation='None' name='[none:EmployeeID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names - Split 1]' derivation='None' name='[none:Pivot Field Names - Split 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pivot Field Names - Split 2]' derivation='Year-Trunc' name='[tyr:Pivot Field Names - Split 2:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:EmployeeID:nk]'>
+            <groupfilter function='level-members' level='[none:EmployeeID:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Pivot Field Names - Split 1:nk]'>
+            <groupfilter function='member' level='[none:Pivot Field Names - Split 1:nk]' member='&quot;Degree&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Pivot Field Names - Split 1:nk]</column>
+            <column>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:EmployeeID:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[sum:Pivot Field Values:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]' scope='cols' value='' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' data-class='subtotal' field='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]' value='Tableau Bold' />
+            <format attr='font-size' field='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]' value='7' />
+            <format attr='text-orientation' field='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]' value='0' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Value:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[sum:Pivot Field Values:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ff5a00' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[sum:Pivot Field Values:qk]</rows>
+        <cols>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[sum:Pivot Field Values:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[sum:Pivot Field Values:qk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3422.0</value>
+                <value>#2018-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{2877DF6F-1543-4188-8480-42994B97A43F}' />
+    </worksheet>
+    <worksheet name='Eigenvector (Summary)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EmployeeMetrics' name='federated.0t20sl90kjn8wx1aux8wq1i2bbqd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0t20sl90kjn8wx1aux8wq1i2bbqd'>
+            <column caption='Metric Value - Eigenvector' datatype='real' name='[Calculation_2652620238985048064]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names - Split 1]=&apos;Eigenvector&apos; AND (YEAR([Pivot Field Names - Split 2])=2009 OR YEAR([Pivot Field Names - Split 2])=2008)&#13;&#10;THEN 0&#13;&#10;ELSE [Pivot Field Values]&#13;&#10;END' />
+            </column>
+            <column caption='Employee ID' datatype='string' name='[EmployeeID]' role='dimension' type='nominal' />
+            <column caption='Metric Type' datatype='string' name='[Pivot Field Names - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[Pivot Field Names]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Pivot Field Names], &quot;_&quot;, 1 ) )' />
+            </column>
+            <column caption='Metric Date' datatype='date' datatype-customized='true' name='[Pivot Field Names - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[Pivot Field Names]'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy-dd-MM&quot;, TRIM( SPLIT( [Pivot Field Names], &quot;_&quot;, 2 ) ) ))' />
+            </column>
+            <column datatype='string' hidden='true' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Metric Value' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[EmployeeID]' derivation='None' name='[none:EmployeeID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names - Split 1]' derivation='None' name='[none:Pivot Field Names - Split 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2652620238985048064]' derivation='Sum' name='[sum:Calculation_2652620238985048064:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pivot Field Names - Split 2]' derivation='Year-Trunc' name='[tyr:Pivot Field Names - Split 2:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:EmployeeID:nk]'>
+            <groupfilter function='level-members' level='[none:EmployeeID:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Pivot Field Names - Split 1:nk]'>
+            <groupfilter function='member' level='[none:Pivot Field Names - Split 1:nk]' member='&quot;Eigenvector&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Pivot Field Names - Split 1:nk]</column>
+            <column>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:EmployeeID:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]' scope='cols' value='' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='display' class='0' field='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[sum:Calculation_2652620238985048064:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]' value='Tableau Bold' />
+            <format attr='font-size' field='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]' value='7' />
+            <format attr='text-orientation' field='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]' value='0' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Value:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[sum:Calculation_2652620238985048064:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ff5a00' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[sum:Calculation_2652620238985048064:qk]</rows>
+        <cols>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]</cols>
+        <mark-labels>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[sum:Calculation_2652620238985048064:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[sum:Calculation_2652620238985048064:qk]</field>
+                  <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[tyr:Pivot Field Names - Split 2:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7.6811457478688689</value>
+                <value>#2018-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{C043B44F-4C5D-4C01-9870-767BECB59C6A}' />
+    </worksheet>
+    <worksheet name='Events By Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EmployeeMovement' name='federated.1u8yj9d1t24r7c1azz7eh11247xx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u8yj9d1t24r7c1azz7eh11247xx'>
+            <column caption='Date' datatype='date' name='[Calculation_2126543507444523008]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(IF [Pivot Field Values]=&apos;X&apos;&#13;&#10;     THEN  TODAY()  &#13;&#10;     ELSE  DATEPARSE ( &quot;yyyy-MM-dd&quot;, [Pivot Field Values])&#13;&#10;     END)' />
+            </column>
+            <column caption='Exclude Future Dates' datatype='boolean' name='[Calculation_2126543507450683397]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Calculation_2126543507444523008]&lt;TODAY()' />
+            </column>
+            <column caption='Employee ID' datatype='string' name='[EmployeeID]' role='dimension' type='nominal' />
+            <column caption='Event Type' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Date TEMP' datatype='string' hidden='true' name='[Pivot Field Values]' role='dimension' type='nominal' />
+            <column-instance column='[EmployeeID]' derivation='CountD' name='[ctd:EmployeeID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2126543507450683397]' derivation='None' name='[none:Calculation_2126543507450683397:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2126543507444523008]' derivation='Year' name='[yr:Calculation_2126543507444523008:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[none:Calculation_2126543507450683397:nk]'>
+            <groupfilter function='member' level='[none:Calculation_2126543507450683397:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[none:Calculation_2126543507450683397:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[ctd:EmployeeID:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]' value='Tableau Bold' />
+            <format attr='font-size' field='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]' value='7' />
+            <format attr='text-orientation' field='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[none:Pivot Field Names:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Event Type:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1u8yj9d1t24r7c1azz7eh11247xx].[none:Pivot Field Names:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Count Of Employees:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1u8yj9d1t24r7c1azz7eh11247xx].[ctd:EmployeeID:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[ctd:EmployeeID:qk]</rows>
+        <cols>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[ctd:EmployeeID:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[ctd:EmployeeID:qk]</field>
+                  <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[none:Pivot Field Names:nk]</field>
+                  <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>16</value>
+                <value>&quot;EndOfContract&quot;</value>
+                <value>2014</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[ctd:EmployeeID:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[ctd:EmployeeID:qk]</field>
+                  <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[none:Pivot Field Names:nk]</field>
+                  <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>20</value>
+                <value>&quot;StartOfContract&quot;</value>
+                <value>2015</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{78C7BAED-812D-42F8-932D-5CAF1AF6741B}' />
+    </worksheet>
+    <worksheet name='Running Sum By Year/Month'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EmployeeMovement' name='federated.1u8yj9d1t24r7c1azz7eh11247xx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u8yj9d1t24r7c1azz7eh11247xx'>
+            <column caption='Date' datatype='date' name='[Calculation_2126543507444523008]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(IF [Pivot Field Values]=&apos;X&apos;&#13;&#10;     THEN  TODAY()  &#13;&#10;     ELSE  DATEPARSE ( &quot;yyyy-MM-dd&quot;, [Pivot Field Values])&#13;&#10;     END)' />
+            </column>
+            <column caption='Running Sum' datatype='integer' name='[Calculation_2126543507450597380]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF INDEX()&lt;WINDOW_MAX(INDEX()) THEN&#13;&#10;    RUNNING_SUM(SUM(IF [Pivot Field Names] = &quot;StartOfContract&quot; THEN 1&#13;&#10;    ELSE -1&#13;&#10;    END))&#13;&#10;END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Event Type' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Date TEMP' datatype='string' hidden='true' name='[Pivot Field Values]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2126543507444523008]' derivation='Month-Trunc' name='[tmn:Calculation_2126543507444523008:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2126543507450597380]' derivation='User' name='[usr:Calculation_2126543507450597380:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+          <_.fcp.AllowCalculationsForDensifiedMarks.true...calcs-on-densified-marks value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[tmn:Calculation_2126543507444523008:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[usr:Calculation_2126543507450597380:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[tmn:Calculation_2126543507444523008:qk]' value='Tableau Bold' />
+            <format attr='font-size' field='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[tmn:Calculation_2126543507444523008:qk]' value='7' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Month/Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1u8yj9d1t24r7c1azz7eh11247xx].[tmn:Calculation_2126543507444523008:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Count Of Employees:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1u8yj9d1t24r7c1azz7eh11247xx].[usr:Calculation_2126543507450597380:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ff5a00' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[usr:Calculation_2126543507450597380:qk]</rows>
+        <cols>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[tmn:Calculation_2126543507444523008:qk]</cols>
+        <show-full-range>
+          <column>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[Calculation_2126543507444523008]</column>
+        </show-full-range>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[tmn:Calculation_2126543507444523008:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[usr:Calculation_2126543507450597380:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[tmn:Calculation_2126543507444523008:qk]</field>
+                  <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[usr:Calculation_2126543507450597380:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2019-03-01 00:00:00#</value>
+                <value>50</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{2917B278-9CFE-4FDD-BE70-EB13DBC1EC5D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Workforce Tenure Analysis'>
+      <style />
+      <size maxheight='800' maxwidth='1350' minheight='800' minwidth='1350' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='1' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+          <zone fixed-size='80' friendly-name='Header' h='10000' id='5' is-fixed='true' param='horz' type-v2='layout-flow' w='100000' x='0' y='0'>
+            <zone fixed-size='200' h='10000' id='65' is-fixed='true' param='vert' type-v2='layout-flow' w='14815' x='0' y='0'>
+              <zone h='10000' id='67' is-scaled='1' param='C:/Users/vonschultz666/Desktop/Task/Logo/01_Infobip_logo_horizontal_color_crop.png' type-v2='bitmap' w='14815' x='0' y='0'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone h='10000' id='68' param='horz' type-v2='layout-flow' w='59259' x='14815' y='0' />
+            <zone fixed-size='350' h='10000' id='66' is-fixed='true' param='horz' type-v2='layout-flow' w='25926' x='74074' y='0'>
+              <zone forceUpdate='true' h='10000' id='69' type-v2='text' w='25926' x='74074' y='0'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Bold' fontsize='16'>Workforce Tenure Analysis</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone fixed-size='360' friendly-name='Body Up' h='43750' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='100000' x='0' y='10000'>
+            <zone fixed-size='35' friendly-name='Text' h='4375' id='12' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='100000' x='0' y='10000'>
+              <zone h='4375' id='34' param='horz' type-v2='layout-flow' w='33333' x='0' y='10000'>
+                <zone forceUpdate='true' h='4375' id='37' type-v2='text' w='17037' x='0' y='10000'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Bold' fontsize='12'>Absolute Turnover By Year</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='0' />
+                    <format attr='margin-bottom' value='2' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin-right' value='220' />
+                  <format attr='background-color' value='#000000' />
+                </zone-style>
+              </zone>
+              <zone h='4375' id='36' param='horz' type-v2='layout-flow' w='33334' x='33333' y='10000'>
+                <zone h='4375' id='38' type-v2='text' w='10371' x='33333' y='10000'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Bold' fontsize='12'>Events By Type</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='0' />
+                    <format attr='margin-right' value='0' />
+                    <format attr='margin-bottom' value='2' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin-right' value='310' />
+                  <format attr='background-color' value='#000000' />
+                </zone-style>
+              </zone>
+              <zone h='4375' id='35' param='horz' type-v2='layout-flow' w='33333' x='66667' y='10000'>
+                <zone forceUpdate='true' h='4375' id='39' type-v2='text' w='17777' x='66667' y='10000'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Bold' fontsize='12'>Running Sum By Year/Month</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='0' />
+                    <format attr='margin-right' value='0' />
+                    <format attr='margin-bottom' value='2' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin-right' value='210' />
+                  <format attr='background-color' value='#000000' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='325' friendly-name='Viz' h='39375' id='13' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='100000' x='0' y='14375'>
+              <zone h='39375' id='29' name='Absolute Turnover By Year' show-title='false' w='33333' x='0' y='14375'>
+                <layout-cache minheight='120' type-h='scalable' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39375' id='30' name='Events By Type' show-title='false' w='33334' x='33333' y='14375'>
+                <layout-cache minheight='120' type-h='scalable' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39375' id='32' name='Running Sum By Year/Month' show-title='false' w='33333' x='66667' y='14375'>
+                <layout-cache minheight='130' type-h='scalable' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone fixed-size='20' friendly-name='Divider' h='2500' id='33' is-fixed='true' param='horz' type-v2='layout-flow' w='100000' x='0' y='53750' />
+          <zone fixed-size='360' friendly-name='Body Down' h='43750' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='100000' x='0' y='56250'>
+            <zone fixed-size='35' friendly-name='Text' h='4375' id='16' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='100000' x='0' y='56250'>
+              <zone h='4375' id='45' param='horz' type-v2='layout-flow' w='33333' x='0' y='56250'>
+                <zone forceUpdate='true' h='4375' id='48' type-v2='text' w='14814' x='0' y='56250'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Bold' fontsize='12'>Community Size By Year</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='0' />
+                    <format attr='margin-bottom' value='2' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='0' />
+                  <format attr='margin-right' value='250' />
+                  <format attr='background-color' value='#000000' />
+                </zone-style>
+              </zone>
+              <zone h='4375' id='47' param='horz' type-v2='layout-flow' w='33334' x='33333' y='56250'>
+                <zone forceUpdate='true' h='4375' id='49' type-v2='text' w='12593' x='33333' y='56250'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Bold' fontsize='12'>Degree (Summary)</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='0' />
+                    <format attr='margin-bottom' value='2' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin-right' value='280' />
+                  <format attr='background-color' value='#000000' />
+                </zone-style>
+              </zone>
+              <zone h='4375' id='46' param='horz' type-v2='layout-flow' w='33333' x='66667' y='56250'>
+                <zone forceUpdate='true' h='4375' id='50' type-v2='text' w='15555' x='66667' y='56250'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Bold' fontsize='12'>Eigenvector (Summary)</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='0' />
+                    <format attr='margin-bottom' value='2' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin-right' value='240' />
+                  <format attr='background-color' value='#000000' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='325' friendly-name='Viz' h='39375' id='15' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='100000' x='0' y='60625'>
+              <zone h='39375' id='40' name='Community Size By Year' show-title='false' w='33333' x='0' y='60625'>
+                <layout-cache cell-count-h='1' type-h='cell' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='padding-top' value='10' />
+                  <format attr='padding-bottom' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='39375' id='42' name='Degree (Summary)' show-title='false' w='33334' x='33333' y='60625'>
+                <layout-cache minheight='130' type-h='scalable' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39375' id='44' name='Eigenvector (Summary)' show-title='false' w='33333' x='66667' y='60625'>
+                <layout-cache minheight='130' type-h='scalable' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+      <simple-id uuid='{09409295-C2B5-42E1-8EBF-1C250270318C}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='dashboard' maximized='true' name='Workforce Tenure Analysis'>
+      <viewpoints>
+        <viewpoint name='Absolute Turnover By Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Community Size By Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Degree (Summary)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Eigenvector (Summary)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Events By Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Running Sum By Year/Month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4B398F87-1683-4548-BA78-BB7CCB831542}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Absolute Turnover By Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[usr:Calculation_2126543507447951363:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[none:Calculation_2126543507450683397:nk]</field>
+            <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[usr:Calculation_2126543507447951363:nk]</field>
+            <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CC71D294-0F18-4160-A726-54F0CA012A73}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Community Size By Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:Calculation_2507942100907069440:nk]</field>
+            <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:EmployeeID:nk]</field>
+            <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[qr:Pivot Field Names - Split 2:ok]</field>
+            <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[usr:Calculation_2507942100907462657:nk]</field>
+            <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A8DECBA8-67A2-4DE5-AAA6-DC18E63732DB}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Degree (Summary)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[none:EmployeeID:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{75BB7025-CECF-4A37-A8B6-B925E7BBEC54}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Eigenvector (Summary)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0t20sl90kjn8wx1aux8wq1i2bbqd].[yr:Pivot Field Names - Split 2:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{681E6D1E-6F05-4B2D-B2DF-A91BCD4B07DB}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Events By Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1u8yj9d1t24r7c1azz7eh11247xx].[none:Pivot Field Names:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[none:Calculation_2126543507450683397:nk]</field>
+            <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[none:EmployeeID:nk]</field>
+            <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[none:Pivot Field Names:nk]</field>
+            <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3EB6AC3E-EE75-4788-AB0E-2BC36EC976FC}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Running Sum By Year/Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[none:Calculation_2126543507450683397:nk]</field>
+            <field>[federated.1u8yj9d1t24r7c1azz7eh11247xx].[yr:Calculation_2126543507444523008:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9B7D8974-9B26-4261-9BDC-D7C6C7397CE0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Workforce Tenure Analysis' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
