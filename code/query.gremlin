@@ -1,0 +1,68 @@
+//Import podatka Cosmos DB
+//Kreiranje nodova
+g.addV('Infobip').property('Country', 'Croatia').property('Subsdiary', 'Zagreb HQ').property('pk', 'pk')
+
+g.addV('Client').property('Name', 'CIAK').property('Country', 'Croatia').property('TypeOfContract', 'Long Term').property('SubscriptionModel', 'SMS').property('pk', 'pk')
+g.addV('Client').property('Name', 'Nissan').property('Country', 'Saudi Arabia').property('TypeOfContract', 'Long Term').property('SubscriptionModel', 'Moments').property('pk', 'pk')
+g.addV('Client').property('Name', 'UNICEF').property('Country', 'USA').property('TypeOfContract', 'Long Term').property('SubscriptionModel', 'SMS').property('pk', 'pk')
+g.addV('Client').property('Name', 'Uber').property('Country', 'Croatia').property('TypeOfContract', 'Long Term').property('SubscriptionModel', 'Moments').property('pk', 'pk')
+g.addV('Client').property('Name', 'Bolt').property('Country', 'Croatia').property('TypeOfContract', 'Long Term').property('SubscriptionModel', 'Moments').property('pk', 'pk')
+g.addV('Client').property('Name', 'DPD').property('Country', 'Croatia').property('TypeOfContract', 'Trail').property('SubscriptionModel', 'SMS').property('pk', 'pk')
+
+g.addV('Telecom').property('Name', 'T-Com').property('Country', 'Croatia').property('TypeOfContract', 'Long Term').property('SubscriptionModel', 'SMS').property('pk', 'pk')
+g.addV('Telecom').property('Name', 'A1').property('Country', 'Croatia').property('TypeOfContract', 'Long Term').property('SubscriptionModel', 'SMS').property('pk', 'pk')
+g.addV('Telecom').property('Name', 'Telemach').property('Country', 'Croatia').property('TypeOfContract', 'Long Term').property('SubscriptionModel', 'SMS').property('pk', 'pk')
+
+g.addV('User').property('UserID', '423gg3ds3').property('Country', 'Croatia').property('Application', 'Uber Mobile App').property('pk', 'pk')
+g.addV('User').property('UserID', '423244324').property('Country', 'Croatia').property('Application', 'Uber Mobile App').property('pk', 'pk')
+g.addV('User').property('UserID', '42324g333').property('Country', 'Slovenia').property('Application', 'Uber Mobile App').property('pk', 'pk')
+g.addV('User').property('UserID', '423333ds3').property('Country', 'Austria').property('Application', 'Bolt Mobile App').property('pk', 'pk')
+g.addV('User').property('UserID', '423gf3ds3').property('Country', 'Slovenia').property('Application', 'CIAK Web').property('pk', 'pk')
+g.addV('User').property('UserID', '423rew3re').property('Country', 'Germany').property('Application', 'Nissan Portal').property('pk', 'pk')
+g.addV('User').property('UserID', '423grrrs3').property('Country', 'Germany').property('Application', 'Nissan Portal').property('pk', 'pk')
+g.addV('User').property('UserID', '42eeeees3').property('Country', 'Croatia').property('Application', 'DPD Web').property('pk', 'pk')
+g.addV('User').property('UserID', '4234444s3').property('Country', 'Croatia').property('Application', 'DPD Web').property('pk', 'pk')
+g.addV('User').property('UserID', '423gjghs3').property('Country', 'Croatia').property('Application', 'DPD Web').property('pk', 'pk')
+
+
+//Kreiranje veza
+g.V().hasLabel('Client').has('Name', 'CIAK').addE('TRANSACTION').to(g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ'))
+g.V().hasLabel('Client').has('Name', 'Nissan').addE('TRANSACTION').to(g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ'))
+g.V().hasLabel('Client').has('Name', 'UNICEF').addE('TRANSACTION').to(g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ'))
+g.V().hasLabel('Client').has('Name', 'Uber').addE('TRANSACTION').to(g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ'))
+g.V().hasLabel('Client').has('Name', 'Bolt').addE('TRANSACTION').to(g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ'))
+g.V().hasLabel('Client').has('Name', 'DPD').addE('TRANSACTION').to(g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ'))
+
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('SMS').to(g.V().hasLabel('Telecom').has('Name', 'T-Com'))
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('SMS').to(g.V().hasLabel('Telecom').has('Name', 'A1'))
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('SMS').to(g.V().hasLabel('Telecom').has('Name', 'Telemach'))
+
+g.V().hasLabel('Telecom').has('Name', 'T-Com').addE('SMS').to(g.V().hasLabel('User').has('UserID', '423gg3ds3'))
+g.V().hasLabel('Telecom').has('Name', 'T-Com').addE('SMS').to(g.V().hasLabel('User').has('UserID', '423gg3ds3'))
+g.V().hasLabel('Telecom').has('Name', 'A1').addE('SMS').to(g.V().hasLabel('User').has('UserID', '423244324'))
+g.V().hasLabel('Telecom').has('Name', 'Telemach').addE('SMS').to(g.V().hasLabel('User').has('UserID', '423244324'))
+g.V().hasLabel('Telecom').has('Name', 'Telemach').addE('SMS').to(g.V().hasLabel('User').has('UserID', '423244324'))
+
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('MOMENTS').to(g.V().hasLabel('User').has('UserID', '42324g333'))
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('MOMENTS').to(g.V().hasLabel('User').has('UserID', '42324g333'))
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('MOMENTS').to(g.V().hasLabel('User').has('UserID', '423333ds3'))
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('MOMENTS').to(g.V().hasLabel('User').has('UserID', '42324g333'))
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('MOMENTS').to(g.V().hasLabel('User').has('UserID', '423gf3ds3'))
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('MOMENTS').to(g.V().hasLabel('User').has('UserID', '42324g333'))
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('MOMENTS').to(g.V().hasLabel('User').has('UserID', '42324g333'))
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('MOMENTS').to(g.V().hasLabel('User').has('UserID', '423rew3re'))
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('MOMENTS').to(g.V().hasLabel('User').has('UserID', '423grrrs3'))
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('MOMENTS').to(g.V().hasLabel('User').has('UserID', '42eeeees3'))
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('MOMENTS').to(g.V().hasLabel('User').has('UserID', '423rew3re'))
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').addE('MOMENTS').to(g.V().hasLabel('User').has('UserID', '42eeeees3'))
+
+
+//Jednostavi analitički upiti
+//Korisnici koji su dobili SMS preko T-Coma
+g.V().hasLabel('Telecom').has('Name', 'T-Com').outE('SMS').inV().hasLabel('User')
+
+//Korisnici koji su dobili poruku od Infobipa preko MOMENTS platforme
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').outE('MOMENTS').inV().hasLabel('User')
+
+//Preko kojih telekoma je Infobip slao SMS-ove korisnicima
+g.V().hasLabel('Infobip').has('Subsdiary', 'Zagreb HQ').outE('SMS').inV().hasLabel('Telecom')
